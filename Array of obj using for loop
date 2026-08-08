@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+class student 
+{
+    
+    public:
+    int rollno;
+    string name;
+    void getData() {
+        cin>>rollno>>name;
+    }
+    void display(){
+        cout<<rollno<<" "<<name<<endl;
+    }
+};
+int main()
+{
+   student s[2];
+   for(int i=0;i<2;i++)
+   s[i].getData();
+   for(int i=0;i<2;i++)
+   s[i].display();
+    return 0;
+}
